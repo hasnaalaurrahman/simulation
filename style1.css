@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: rgb(143, 188, 209);
+    color: rgb(43, 72, 128);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10%;
+    background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: rgb(243, 122, 52);
+    font-family: courier;
+    font-weight: 600;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: rgb(85, 84, 84);
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+.navbar a.active, 
+.navbar a:hover {
+    font-weight: bolder;
+    color: ivory;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    justify-content: space-between;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: rgb(243, 122, 52);
+}
+
+.home-content p{
+    font-size: 18px;
+    margin: 20px 0 40px;
+}
+
+.btn {
+    position: relative;
+    width: 180px;
+    height: 48px;
+    display: inline-flex;
+    background:wheat;
+    border-radius: 40px;
+    font-size: 19px;
+    color: #264653;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.home-sosmed a{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: wheat;
+    border-radius: 50%;
+    color: rgb(43, 72, 128); 
+    font-size: 20px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    z-index: 1;
+}
+
+.home-sosmed a:hover,
+.btn:hover{
+    background: ivory;
+    color: rgb(243, 122, 52);
+}
+
+.home-img{
+    border-radius: 50%;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    background: wheat;
+}
+
+.container {
+    margin: auto;
+    width: 500px;
+    max-width: 90%;
+}
+
+.container form {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: ivory;
+    border-radius: 6px;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, .3);
+}
+
+.container form h2 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.container form .form-control {
+    width: 100%;
+    height: 35px;
+    border-radius: 6px;
+    border: 1px solid silver;
+    margin: 5px 0 10px 0;
+    padding: 0 5px;
+}
+
+.container form .btn {
+    margin: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 34px;
+    border: 1px solid rgb(43, 72, 128);
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.container form .btn:hover{
+    opacity: .7;
+}
